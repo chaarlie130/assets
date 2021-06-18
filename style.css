@@ -1,0 +1,236 @@
+:root {
+    --primary-white: #fff;
+    --primary-darkwhite: #b3b3b3;
+    --primary-gray: #0c0c0c;
+    --primary-lightgray: #272727;
+    --primary-red: #fc3c44;
+    --primary-darkred: #b42d32;
+    --primary-lightred: #ff666b;
+    --primary-orange: #FF9226;
+    --primary-darkorange: #db7e21;
+    --primary-lightorange: #FFA245;
+    --primary-green: #30FF38;
+    --primary-darkgreen: #14b419;
+    --primary-lightgreen: #4CFC53;
+    --primary-blue: #2b7cff;
+    --primary-darkblue: #2769d3;
+    --primary-lightblue: #81b1ff;
+    --primary: #0b0e16;
+    --secondary: #10141f;
+}
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+/* Optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #ff000000;
+}
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Roboto';
+}
+body {
+    background: #060606;
+}
+.header {
+    width: 100vw;
+      /* added */
+    width: 100vw;
+    height: 45px;
+    position: fixed;
+    z-index: 1000;
+    padding-bottom: 5px;
+}
+.header svg {
+    color: white;
+    fill: white;
+    display: inline-block;
+    margin: 10px;
+    margin-left: 17px;
+    margin-right: 17px;
+}
+#logo {
+    width: 80px;
+    float: left;
+    height: 30px;
+}
+#search {
+    width: 30px;
+    float: right;
+}
+.topnav {
+    width: 100vw;
+    float: left;
+    text-align: center;
+    margin-top: 60px;
+    transition: 0.2s;
+    padding-left: 0px !important;
+}
+.topnav a {text-decoration: none !important;}
+.link {
+    color: white;
+    margin-right: 20px;
+}
+#end {
+    margin-right: 0px !important;
+}
+.main-section {
+    background: linear-gradient(to bottom, #0c0c0c29, #0b0e16b0, #060606eb,#060606),
+    linear-gradient(to top, #ffffff00, #0c0c0c00, #0c0c0cc2, #0c0c0c),url(https://i.imgur.com/9QdTutP.png);
+    height: 275px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+.title-show-logo {
+    width: 200px;
+    margin-top: 20px;
+    margin-left: -80px;
+}
+#play-main-title {
+    padding: 8px;
+    border: none;
+    border-radius: 4px;
+    background: #141414;
+    color: white;
+    font-size: 20px;
+    display: block;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.play-icon {
+    margin-left: 4px;
+    width: 12px;
+}
+.rws {
+    margin-left: 15px;
+    margin-top: 30px;
+    margin-bottom: 70px;
+}
+.row {
+    overflow-x: auto;
+    margin-left: 0px;
+    white-space: nowrap;
+}
+.row-title {
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.content-cont {
+    display: inline-block;
+    margin-right: 7px;
+}
+.content-cont img {
+    width: 105px;
+    height: 150px;
+    border-radius: 5px;
+}
+.bottomnav {
+    background: #101010;
+    overflow: hidden;
+    position: fixed;
+    bottom: 0;
+    width: 100vw;
+    display: flex;
+    padding: 5px;
+    padding-bottom: 5px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: auto;
+}
+#home-icon,#world,#trophy-icon {
+    width: 20px;
+    color: white;
+}
+.home-icon-cont h6 {
+    color: white;
+    font-weight: 100;
+    text-align: center;
+    margin-left: -4px;
+}
+.news-icon-cont h6 {
+    color: gray;
+    font-weight: 100;
+    text-align: center;
+    margin-left: -2.75px;
+}
+.home-icon-cont {
+    width: fit-content;
+}
+.news-icon-cont {
+    width: fit-content;
+}
+.top-icon-cont {
+    width: fit-content;
+}
+.iconcont {
+    display: inline-block;
+    padding-top: 5px;
+    margin: auto;
+}
+#trophy-icon {
+    color: gray !important;
+}
+svg#world {
+    color: gray !important;
+}
+
+.top-icon-cont h6 {
+    color: gray;
+    font-weight: 100;
+    margin-left: -3.25px;
+}
+.fade-topnav {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    opacity: 1;
+    background: #0c0c0ceb;
+    position: fixed;
+    top: -100px;
+    transition: 0.3s;
+    display: none;
+}
+.fade-topnav  svg {
+    color: white;
+    fill: white;
+    display: inline-block;
+    margin: 10px;
+}
+.fade-topnav a {
+    padding-top: 20px;
+    font-size: 17px;
+    vertical-align: top;
+}
+
+.fade-links {
+    float: left;
+    margin-top: 15px;
+    padding-left: 13px;
+    width: 100%;
+    text-align: center;
+    padding-right: 13px;
+}
+a#middle {
+    margin-left: 60px;
+    margin-right: 60px;
+}
+
+svg#search-fade {
+    width: 14px;
+    margin-top: 3px;
+    margin-left: 7px;
+}
+.slide-page {
+    width: 0px;
+    padding: 0px;
+    height: 100vh;
+    transition: 0.2s;
+    position: absolute;
+    z-index: 10000;
+    right: 0px;
+}
