@@ -1,4 +1,3 @@
-}
 :root {
     --primary-white: #fff;
     --primary-darkwhite: #b3b3b3;
@@ -227,12 +226,11 @@ svg#search-fade {
     margin-left: 7px;
 }
 .slide-page {
-    width: 100vw;
-    display: none;
+    width: 0px;
     padding: 0px;
     height: 100vh;
     transition: 0.2s;
     position: absolute;
     z-index: 10000;
-    left: 100vw;
+    right: 0px;
 }
